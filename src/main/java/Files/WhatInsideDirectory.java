@@ -25,8 +25,6 @@ public class WhatInsideDirectory {
                     System.out.println(path + THIS_IS_FILE);
                 } else if (Files.isDirectory(path)) {
                     System.out.println(path + THIS_IS_DIR);
-                } else {
-                    break;
                 }
             }
         }
