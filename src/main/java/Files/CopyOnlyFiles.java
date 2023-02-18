@@ -17,7 +17,7 @@ public class CopyOnlyFiles {
         Path targetDirectory = Path.of(scanner.nextLine());
         //напишите тут ваш код
         //сканируем первую директорию, вносим в массив, определяем тип элемента, если файл - копируем во вторую директорию
-        try (DirectoryStream<Path> files = Files.newDirectoryStream(sourceDirectory);){
+        try (DirectoryStream<Path> files = Files.newDirectoryStream(sourceDirectory)){
             for(Path path : files){
                 if (Files.isRegularFile(path)) {
                     Path resolvedPath = targetDirectory.resolve(path.getFileName());//используем resolve для разрешения пути
