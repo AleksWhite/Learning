@@ -16,7 +16,7 @@ public class EndOfTime {
 
     static Instant getMaxFromMilliseconds() {
         //напишите тут ваш код
-        Instant millSeconds = Instant.ofEpochMilli.
+        //Instant millSeconds = Instant.ofEpochMilli;
         return null;
     }
 
