@@ -2,7 +2,9 @@ package LambdaBasic;
 
 import java.util.ArrayList;
 import java.util.Collections;
-
+/*
+Сортировка студентов по убыванию по возрасту
+* */
 public class StudentSort {
     public static ArrayList<Student> students = new ArrayList<>();
 
