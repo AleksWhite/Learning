@@ -20,7 +20,7 @@ public class FromStreamToMap {
     public static Map<String, Integer> getMap(Stream<String> stringStream) {
         //напишите тут ваш код
         Map<String, Integer> result = stringStream
-                .collect(Collectors.toMap(e -> e.toString(), e -> e.length()));
+                .collect(Collectors.toMap(e -> e, e -> e.length()));
         return result;
         //короткий вариант
         //return stringStream.collect(toMap(word -> word, String::length));
