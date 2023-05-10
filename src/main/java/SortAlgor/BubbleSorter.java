@@ -17,7 +17,6 @@ public class BubbleSorter {
                     array[j] = temp;
                 }
             }
-            System.out.println(array[i]);
         }
     }
 }
