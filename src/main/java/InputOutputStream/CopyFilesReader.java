@@ -17,7 +17,7 @@ public class CopyFilesReader {
             while (reader.ready()) //Пока данные есть в потоке
             {
                 int real = reader.read(buffer); //Читаем данные в буфер
-                writer.write(buffer, 0, real); //Записываем данные из буфера во второй поток
+                writer.write(buffer, 0, real); //Записываем данные из буфера во второй поток(содержимое буфера, с 0го байта, по размеру)
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
